@@ -1,0 +1,29 @@
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="<%=baseURL%>vendor/jquery/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="<%=baseURL%>vendor/bootstrap/js/bootstrap.js"></script>
+    
+    <script type="text/javascript" src=<%=baseURL%>vendor/angular/angular.js></script>
+    <script type="text/javascript" src=<%=baseURL%>vendor/angular/angular-route.js></script>
+    
+    <script type="text/javascript" src=<%=baseURL%>vendor/tags/ng-tags-input.js></script>
+    
+    <script type="text/javascript" src=<%=baseURL%>js/sidebar.js></script>
+
+    <script type="text/javascript" src=<%=baseURL%>js/funciones.js></script>
+    
+    <script type="text/javascript" src=<%=baseURL%>js/app.js></script>
+
+</body>
+
+</html>

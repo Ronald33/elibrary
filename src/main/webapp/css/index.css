@@ -1,0 +1,9 @@
+.portada
+{
+    height: 200px;
+}
+
+.dportada > a > img
+{
+    max-height: 200px;
+}
