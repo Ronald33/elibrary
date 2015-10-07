@@ -15,6 +15,7 @@
         <spring.version>4.0.1.RELEASE</spring.version>
         <jackson.version>1.9.10</jackson.version>
         <aspectj.version>1.7.3</aspectj.version>
+        <jstl.version>1.2</jstl.version>
     </properties>
     
     <repositories>
@@ -131,6 +132,21 @@
             <groupId>org.aspectj</groupId>
             <artifactId>aspectjweaver</artifactId>
             <version>${aspectj.version}</version>
+        </dependency>
+        
+        
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+            <version>${jstl.version}</version>
+        </dependency>
+        
+        
+        <dependency>
+            <groupId>org.unitils</groupId>
+            <artifactId>unitils-orm</artifactId>
+            <version>3.4.2</version>
+            <scope>test</scope>
         </dependency>
         
     </dependencies>

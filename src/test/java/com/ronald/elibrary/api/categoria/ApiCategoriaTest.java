@@ -7,8 +7,10 @@ package com.ronald.elibrary.api.categoria;
 
 import com.ronald.elibrary.entity.Categoria;
 import com.ronald.elibrary.model.categoria.CategoriaModel;
+import org.hibernate.SessionFactory;
 import org.junit.Test;
 import static org.junit.Assert.*;
+import org.unitils.orm.hibernate.annotation.HibernateSessionFactory;
 
 public class ApiCategoriaTest
 {

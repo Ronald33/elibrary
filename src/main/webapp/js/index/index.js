@@ -1,7 +1,7 @@
 var app = angular.module("app", ['duScroll']);
 
 app.controller('ultimos', function ($scope, $http, $document) {
-    var request = $http.get("api/alibro");
+    var request = $http.get("../api/alibro");
     request.success(function (response) {
         $scope.libros = response;
     });
@@ -17,12 +17,12 @@ app.controller('ultimos', function ($scope, $http, $document) {
     
     $scope.detalles = function (id)
     {
-        var request = $http.get("api/alibro/" + id);
+        var request = $http.get("../api/alibro/" + id);
         request.success(function (response) {
             $scope.dlibro = response;
         });
         
-        var request_comentarios = $http.get("api/alibro/"+id+"/comentario");
+        var request_comentarios = $http.get("../api/alibro/"+id+"/comentario");
         request_comentarios.success(function (response) {
             $scope.comentarios = response;
         });
@@ -47,7 +47,7 @@ app.controller('ultimos', function ($scope, $http, $document) {
         $scope.comentario.libro = {};
         $scope.comentario.libro.id = $scope.dlibro.id;
         
-        var request = $http.post("api/comentario/", $scope.comentario);
+        var request = $http.post("../api/comentario/", $scope.comentario);
         request.success(function (response) {
             var comentario = 
                     {

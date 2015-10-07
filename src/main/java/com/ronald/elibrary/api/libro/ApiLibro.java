@@ -185,8 +185,8 @@ public class ApiLibro extends HttpServlet
                 libro.setAutors(mis_autores);
                 // Fin del seteo de autores
                 
-                LibroModel.save(libro);
-                response.sendRedirect("../index.jsp");
+//                LibroModel.save(libro);
+                response.sendRedirect("/elibrary/editor/dashboard");
             }
             else
             {

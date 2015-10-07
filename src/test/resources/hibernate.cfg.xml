@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/elibrary?zeroDateTimeBehavior=convertToNull</property>
+    <property name="hibernate.connection.username">root</property>
+    <mapping class="com.ronald.elibrary.entity.Editor"/>
+    <mapping class="com.ronald.elibrary.entity.Comentario"/>
+    <mapping class="com.ronald.elibrary.entity.Puntuacion"/>
+    <mapping class="com.ronald.elibrary.entity.Categoria"/>
+    <mapping class="com.ronald.elibrary.entity.Usuario"/>
+    <mapping class="com.ronald.elibrary.entity.Editorial"/>
+    <mapping class="com.ronald.elibrary.entity.Libro"/>
+    <mapping class="com.ronald.elibrary.entity.NewHibernateUtil"/>
+    <mapping class="com.ronald.elibrary.entity.Autor"/>
+  </session-factory>
+</hibernate-configuration>
